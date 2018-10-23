@@ -1,5 +1,6 @@
 .App {
-
+  height: auto;
+  width: auto;
 }
 header{
   height: 90px;
@@ -20,19 +21,148 @@ header{
 }
 .navbar{
   float: right;
-  padding: 28px;
-  margin-right: 60px;
+  padding: 34px;
 }
 .navbar ul{
+  display: flex;
+  flex-wrap: nowrap;
   list-style: none;
   margin: 0;
   float: right;
 }
 .navbar ul li{
-  display: inline-block;
-  margin: 0 0.5em;
-  padding: 0.3em 0.5em;
-  border-radius: 2px;
-  line-height: 1.5em;
+  margin: 0 20px;
   cursor: pointer;
+}
+
+.container{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left-image{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.grey{
+  background-color: #36404a;
+}
+.container-left{
+  height: 250px;
+  width: 45%;
+  background-color: aquamarine;
+}
+.container-right{
+  height: 250px;
+  width: 45%;
+  background-color: #5bc8ff;
+}
+.circle{
+  border-radius: 50%;
+  width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color: black;
+  height: 150px;
+  width: 100%;
+}
+.footer-main{
+  height: 100%;
+  width: 100%;
+}
+.footer-top{
+  height: calc(100% - 120px);
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-top ul{
+  height: 30px;
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+.footer-top ul li{
+  font-size: 15px;
+  padding: 0 15px;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+}
+.footer-top ul li:hover{
+  transform: scale(1.3);
+  transition: 2s;
+}
+.footer-middle{
+  height: 30px;
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-middle ul{
+  width: 22%;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: auto;
+}
+.footer-middle ul li{
+  padding: 0 15px;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.footer-bottom{
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 10px 0;
+}
+.copyright{
+  height: calc(100% - 60px);
+  width: 35%;
+  margin: auto;
+}
+.copyright span{
+  line-height: 30px;
+  color: white;
+}
+.social:hover{
+  transform: scale(1.8);
+  transition: 2s;
+}
+.developer{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
